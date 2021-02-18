@@ -1,0 +1,27 @@
+{% extends 'chaining_dropdown/base.html' %}
+{% load static %}
+
+{% block mainblock %}
+
+<div id="owner_div">
+    <select name="owner_name" id="owner_id">
+        <option value="" selected>---Choose Owner---</option>
+        {% for x in owner_model %}
+        <option value="{{x.pk}}">{{x.name}}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<div id="car_div">
+    <select name="car_name" id="car_id">
+        <option value="" selected>---Choose Car Model---</option>
+    </select>
+</div>
+
+<div id="car_model">
+    <select name="car_model_name" id="car_model_id">
+        <option value="" selected>---Choose Car---</option>
+    </select>
+</div>
+
+{% endblock %}

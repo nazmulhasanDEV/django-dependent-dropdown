@@ -1,0 +1,20 @@
+{% extends 'select_drop/base.html' %}
+{% load static %}
+
+
+{% block main %}
+<h1 id="hello">hello</h1>
+
+<p id="state_names"></p>
+
+<select name="country" id="country">
+    {% for x in country %}
+    <option value="{{x.pk}}">{{x.name}}</option>
+    {% endfor %}
+</select>
+
+<select name="state" id="state">
+    <option value="" selected>---Choose State---</option>
+</select>
+
+{% endblock %}

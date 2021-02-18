@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <script type="text/javascript" src="{% static 'index.js' %}"></script>
+</head>
+<body>
+
+<button type="button" id="btn_get" class="btn btn-success">GET</button>
+
+<ul id="list">
+
+</ul>
+
+{% csrf_token %}
+<ul id="right_list">
+
+</ul>
+
+</body>
+</html>

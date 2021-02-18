@@ -1,0 +1,24 @@
+#owner_id{
+width: 150px;
+height: 30px;
+margin-left: 30%;
+position: absolute;
+margin-top: 100px;
+}
+
+
+#car_id{
+width: 150px;
+height: 30px;
+margin-left: 45%;
+margin-top: 100px;
+position: absolute;
+}
+
+#car_model_id{
+width: 150px;
+height: 30px;
+margin-left: 60%;
+margin-top: 100px;
+position: absolute;
+}
